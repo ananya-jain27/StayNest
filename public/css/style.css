@@ -1,0 +1,157 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+/* navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;  
+}
+.nav-link:hover{
+    color: black !important;  
+}
+.search-btn{
+    background-color: #fe424d !important;
+    color: white !important;
+    border-radius: 25px !important;
+    display: flex !important;         /* keeps icon + text on one line */
+    align-items: center !important;   /* vertically center */
+    gap: 0.5rem !important;           /* spacing between icon and text */
+    padding: 0.5rem 0.8rem !important;
+    margin-left: 0.5rem;
+}
+
+.search-inp{
+    border-radius: 25px !important;
+    padding: 0 3rem 0 3rem !important;
+    
+}
+/* footer */
+.f-info{
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #ebebeb ;
+    font-size: 1.1rem;
+    margin-top: auto;         /* Pushes footer to bottom */
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+    
+}
+
+.f-info-social i:hover{
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* index page */
+/* cards */
+.listing-card{
+    border: none !important; 
+    margin-bottom: 2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100%;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0% !important;
+}
+.card-text{
+    font-weight: 400 !important;
+    
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 1;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;  
+} 
+/* filter */
+#filter {
+      display: flex;
+      margin-top: 1rem;
+    }
+.filter {
+      text-align: center;
+      margin-right: 2.5rem;
+      opacity: 0.8;
+}
+.filter:hover {
+      opacity: 1;
+      cursor: pointer;
+}
+.filter p {
+      font-size: 0.8rem;
+}
+.tax-toggle{
+    border: 1px solid #222222;
+    border-radius: 1rem;
+    height: 3.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.tax-info{
+    display: none;
+}
+/* add new list page*/
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* edit page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.preview-img{
+    max-width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* delete */
+.delete-btn{
+    background-color: black !important;
+    border: none !important;
+}
+
+/* show listing page*/
+.show-img{
+    height: 35vh;
+}
+.show-btns{
+    display: flex;
+    flex-direction: row;
+    
+}
