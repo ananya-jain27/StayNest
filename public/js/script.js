@@ -31,3 +31,18 @@ taxSwitch.addEventListener("click" , () => {
     
   }
 })
+
+// Navbar toggler
+let navbarToggler = document.querySelector(".navbar-toggler");
+navbarToggler.addEventListener("click" , () => {
+  let navbar = document.querySelector(".navbar-collapse");
+  if(navbar.style.backgroundColor != "rgba(245, 244, 244, 1)"){
+    navbar.style.backgroundColor = "rgba(245, 244, 244, 1)";
+    navbar.style.paddingLeft = "1rem";
+    navbar.style.paddingRight = "1rem";
+  }
+  else{
+    navbar.style.backgroundColor = "rgb(255, 255, 255)";
+  }
+});
+

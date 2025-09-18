@@ -11,8 +11,14 @@ body{
 /* navbar */
 .navbar{
     height: 5rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
+.navbar-collapse{
+    background-color: white;
+    /* border: 1px solid #222222; */
+    border-radius: 25px;
+}
+
 .fa-compass{
     color: #fe424d;
     font-size: 2rem;
@@ -33,12 +39,12 @@ body{
     padding: 0.5rem 0.8rem !important;
     margin-left: 0.5rem;
 }
-
 .search-inp{
     border-radius: 25px !important;
     padding: 0 3rem 0 3rem !important;
     
 }
+
 /* footer */
 .f-info{
     height: 8rem;
