@@ -86,10 +86,10 @@ app.use((req , res, next) => {
 });
 
 
-// // Root route
-// app.get("/", (req, res) => {
-//     res.send("this is root listings project");
-// });
+// Root route
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 
 // listings
 app.use("/listings" , listingRouter);
