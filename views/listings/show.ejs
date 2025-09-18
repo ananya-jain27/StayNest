@@ -78,10 +78,13 @@
       <div class="card-body">
         <h6 class="card-title"><%= review.author.username %></h5>
         <p class="card-text"> <%= review.comment %></p>
-        <p class="starability-result card-text" data-rating = <%= review.rating %>></p>
-        <form method="POST" action="/listings/<%= listing._id %>/reviews/<%= review._id%>?_method=DELETE" >
-          <button class="btn btn-sm btn-outline-dark mb-3">Delete</button>
-        </form>
+        <p class="starability-result card-text mb-3" data-rating = <%= review.rating %>></p>
+
+        <% if (currUser && currUser._id.equals(review.author._id)) { %>
+          <form method="POST" action="/listings/<%= listing._id %>/reviews/<%= review._id%>?_method=DELETE" >
+            <button class="btn btn-sm btn-outline-dark mb-3">Delete</button>
+          </form>
+        <% } %>
       </div>
     </div>
     <% } %>
