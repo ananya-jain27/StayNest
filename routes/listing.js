@@ -23,6 +23,8 @@ router.post("/", isLoggedIn , validateListing, upload.single('listing[image]'),
     wrapAsync(listingController.createListing));
 
 //Show route
+router.get("/filter/:category" , wrapAsync(listingController.filterListings));
+
 router.get("/:id", wrapAsync(listingController.showListing));
 
 //Edit route

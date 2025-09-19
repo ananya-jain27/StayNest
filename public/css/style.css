@@ -110,6 +110,17 @@ body{
       margin-right: 2.5rem;
       opacity: 0.8;
 }
+.filter-link{
+    color: black ;
+    text-decoration: none ;
+}
+
+.filter-link.active {
+  text-decoration: underline ;
+  font-weight: bold ; /* optional */
+}
+
+
 .filter:hover {
       opacity: 1;
       cursor: pointer;
@@ -133,6 +144,11 @@ body{
 .add-btn{
     background-color: #fe424d !important;
     border: none !important;
+}
+#category{
+    height: 2rem;
+    border-color: rgb(200, 198, 198);
+    border-radius: 6px ;
 }
 
 /* edit page */

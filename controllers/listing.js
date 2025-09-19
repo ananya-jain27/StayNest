@@ -8,7 +8,16 @@ module.exports.index = async (req, res) => {
 module.exports.renderNewForm = (req, res) => {
     res.render("listings/new.ejs");
 };
+module.exports.filterListings = async (req , res) => {
+    let {category} = req.params;
+    const filteredListings = await Listing.find({category : category});
+    if(!filteredListings) {
+        req.flash("error" , " Listing does not exist");
+        res.redirect("/listings");
+    }
+    res.render("listings/filter.ejs" , { filteredListings });
 
+}
 module.exports.showListing = async (req, res) => {
     let { id } = req.params;
     const listing = await Listing.findById(id).populate({path : "reviews",

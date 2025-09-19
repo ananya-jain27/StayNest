@@ -46,3 +46,18 @@ navbarToggler.addEventListener("click" , () => {
   }
 });
 
+// filters (category)
+
+let filterButtons = document.querySelectorAll(".filter-link");
+
+filterButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // remove underline from all
+    filterButtons.forEach((b) => b.classList.remove("active"));
+
+    // add underline only to clicked one
+    btn.classList.add("active");
+  });
+});
+
+
